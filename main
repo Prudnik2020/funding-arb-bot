@@ -1,0 +1,13 @@
+import ccxt
+from aiogram import Bot, Dispatcher, types
+
+bot = Bot(token="ВАШ_ТЕЛЕГРАМ_ТОКЕН")
+dp = Dispatcher(bot)
+
+@dp.message_handler(commands=['start'])
+async def start(message: types.Message):
+    await message.answer("🚀 Бот готов к работе! Используйте /scan")
+
+if __name__ == '__main__':
+    from aiogram import executor
+    executor.start_polling(dp)
