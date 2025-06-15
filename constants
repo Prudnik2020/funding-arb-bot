@@ -1,0 +1,22 @@
+// constants/index.js
+
+// Человекочитаемые названия бирж.
+// Ключи — это те же строки, что возвращает getAvailableExchanges().
+export const EXCHANGE_NAME = {
+  bybit:  "Bybit",
+  kucoin: "KuCoin",
+  mexc:   "MEXC",
+  huobi:  "Huobi",
+  coinex: "CoinEx",
+  bitget: "Bitget"
+}
+
+// Тип funding-rate для каждой биржи (отображается в детальном отчёте).
+export const FUNDING_TYPE = {
+  bybit:  "Плавающая",
+  kucoin: "Фиксируемая",
+  mexc:   "Плавающая",
+  huobi:  "Плавающая",
+  coinex: "Плавающая",
+  bitget: "Плавающая"
+}
